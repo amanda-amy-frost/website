@@ -1,9 +1,15 @@
 <!DOCTYPE HTML>
 <!--
-Astral by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Astral by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!--
+  Rust logo: https://github.com/rust-lang/rust-artwork
+  Tux (Linux logo): https://en.wikipedia.org/wiki/Tux_(mascot)
+  Network graph (tautology, I know): https://www.data-to-viz.com/graph/network.html
+  Fish shell: https://ar.al/2021/07/25/fish-shell/
+ -->
 <html>
   <head>
     <title>Amanda Frost</title>
@@ -11,9 +17,13 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <!-- Favicon -->
-    <!-- Chinese character source -->
-    <!-- https://new.chine-culture.com/en/chinese-calligraphy/chinese-calligraphy-pattern-generator -->
+    <!--
+      Favicon
+      Chinese character source
+      https://new.chine-culture.com/en/chinese-calligraphy/chinese-calligraphy-pattern-generator
+      Export 512x512 pixel image (行書繁, vertical alignment), recenter in Paint
+      https://favicon.io/favicon-converter/
+    -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -42,7 +52,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           <header>
             <h1>Amanda Frost</h1>
             <!-- TODO: fill out more? -->
-            <p>IT and humanities</p>
+            <p>Data analysis and automation specialist with a flair for the humanities</p>
           </header>
           <a href="#projects" class="jumplink pic">
             <span class="arrow icon fa-solid fa-chevron-right"><span>Projects</span></span>
@@ -54,24 +64,42 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           <header>
             <h2>Projects</h2>
           </header>
-          <p>
-            Jeg er specialist indenfor IT med flair for dataanalyse og kommunikation. Min eklektiske uddannelsesbaggrund og livserfaringer gør mig i stand til at trives i miljøer, hvor alle samarbejder mod et fælles formål. Jeg kan nemt forenkle og formidle indviklede begreber, og jeg er lige så dygtig til at forstå og imødekomme mine medmennesker. Jeg kan alt fra C til zsh og suger konstant viden til mig, men vigtigste for mig er, at jeg står side om side med andre til at levere resultater, der er til gavn for samfundet såvel som omverdenen.
-          </p>
+          <!-- <p> -->
+            <ul>
+              <li>
+                <a href="#tourists">Tourists</a>:
+                Analysis of data related to overnight stays from a selection of Global North countries in Denmark.
+              </li>
+              <li>
+                <a href="#website">Website</a>:
+                I document how I build and maintain this website, as this in itself is a project.
+              </li>
+              <li><a href="#linux">Linux</a>:
+                I am in the process of migrating my laptop from Windows to Linux, and I describe many of the considerations here.
+              </li>
+            </ul>
+          <!-- </p> -->
           <section>
             <div class="row">
               <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit" data-caption="Tourists">
-                  <img src="images/tourism.png" alt="">
+                <a href="#tourists" class="image fit" data-caption="Tourists">
+                  <img src="images/tourism-dashboard.png" alt="">
                 </a>
               </div>
               <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit" data-caption="Website">
-                  <img src="images/network.png" alt="">
+                <a href="#website" class="image fit" data-caption="Website">
+                  <!--
+                    1. https://youtu.be/negiPvWHaMc?si=Oe3Dv_4yCkhQp7Bu
+                    2. https://imageyoutube.com/thumbnail-download/
+                    3. Google Lens link on the site above to find a clean image
+                    4. https://pbswisconsin.org/watch/pbs-space-time/why-didnt-antimatter-destroy-the-universe-zwnk6y/
+                  -->
+                  <img src="images/pbs-spactime-antimatter.jpeg" alt="">
                 </a>
               </div>
               <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit" data-caption="Linux">
-                  <img src="images/tux.png" alt="">
+                <a href="#linux" class="image fit" data-caption="Linux">
+                  <img src="images/fish-shell.png" alt="">
                 </a>
               </div>
               <!--
@@ -94,8 +122,13 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             sandbox="allow-scripts allow-same-origin allow-downloads allow-popups allow-forms"
             allowfullscreen
             loading="lazy"
-          > -->
+          >
           </iframe>
+          -->
+          <p>
+            Go to <a href="https://github.com/amanda-amy-frost/tourists" target="_blank">repo</a><br />
+            Go to <a href="https://molab.marimo.io/notebooks/nb_SuhkMpUkmvbTHzRQd2rt21/app" target="_blank">dashboard</a>
+          </p>
         </article>
         <!-- Website -->
         <article id="website" class="panel">

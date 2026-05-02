@@ -1305,6 +1305,17 @@ input, select, textarea {
     box-sizing: inherit;
   }
 
+  /* Added myself */
+  a {
+    color: hotpink;
+    text-decoration: none;
+  }
+
+  /* Added myself */
+  a:hover {
+    color: #e7388a;
+  }
+
   body {
     background-image: url("images/overlay.png"), url("images/bg.jpg");
     background-repeat: repeat, no-repeat;
@@ -1561,6 +1572,16 @@ input, select, textarea {
       width: 100%;
       position: relative; /* Added myself */
       overflow: hidden; /* Added myself */
+      height: 9em; /* Added myself */
+    }
+
+    /* Added myself */
+    .image.fit img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     /* Added myself */
