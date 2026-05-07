@@ -1444,8 +1444,26 @@ input, select, textarea {
     clear: both;
   }
 
-  p, ul, ol, dl, table, blockquote, form {
+  /* Removed p, ul, ol */
+  dl, table, blockquote, form {
     margin-bottom: 2em;
+  }
+
+  /* Added myself */
+  p, details, summary {
+    margin-bottom: 0.5em;
+  }
+
+  /* Added myself */
+  h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  /* Added myself */
+  ul, ol, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
 /* Table */
