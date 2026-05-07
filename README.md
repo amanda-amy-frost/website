@@ -1,3 +1,3 @@
 # Website
 
-The code and assets for my website.
+The code, assets, and content of my website.

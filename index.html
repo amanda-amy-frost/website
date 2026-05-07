@@ -21,15 +21,40 @@
       Favicon
       Chinese character source
       https://new.chine-culture.com/en/chinese-calligraphy/chinese-calligraphy-pattern-generator
-      Export 512x512 pixel image (行書繁, vertical alignment), recenter in Paint
+      Export 512x512 pixel image (行书繁, vertical alignment), recenter in Paint
       https://favicon.io/favicon-converter/
     -->
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest -->
     <!-- https://www.w3.org/TR/appmanifest/ -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest -->
     <link rel="manifest" href="manifest.webmanifest">
+    <!--
+      Blocking AI
+      I'm fine with also blocking Google and Bing and others from indexing this site
+      https://simplycreative.uk/stop-chatgpt-ai-scraping/
+      https://cookie-script.com/guides/blocking-ai-scrapers
+      https://dev.to/biancarus/how-to-prevent-ai-models-from-training-on-website-images-2216
+      https://iptc.org/wp-content/uploads/2025/05/IPTC-Generative-AI-Opt-Out-Best-Practices.pdf
+    -->
+    <!-- IPTC Recommendation 2 -->
+    <link rel="schema.dcterms" href="terms.html">
+    <meta name="dcterms.rights" content="&copy; 2026 Amanda Frost">
+    <!-- Cookie Script -->
+    <meta name="ai-usage" content="no-training,no-summarization">
+    <!-- Mixture of above sources -->
+    <meta name="robots" content="noindex,noarchive,nosnippet,nofollow,noai,noimageai">
+    <meta name="ChatGPTBot" content="noindex,noarchive,nosnippet,nofollow,noai,noimageai">
+    <!--
+      Robots.txt
+      While it should be possible to group user agents into a single rule, the examples
+      I see online do it more verbosely. I therefore have more trust that it will work
+      doing it that way, rather than grouping every user agent into one rule.
+      https://developers.google.com/crawling/docs/robots-txt/create-robots-txt
+      https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers
+      https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0
+    -->
   </head>
   <body class="is-preload">
     <!-- Wrapper-->
@@ -67,19 +92,19 @@
             <h2>Projects</h2>
           </header>
           <!-- <p> -->
-            <ul>
-              <li>
-                <a href="#tourists">Tourists</a>:
-                Analysis of data related to overnight stays from a selection of Global North countries in Denmark.
-              </li>
-              <li>
-                <a href="#website">Website</a>:
-                I document how I build and maintain this website, as this in itself is a project.
-              </li>
-              <li><a href="#linux">Linux</a>:
-                I am in the process of migrating my laptop from Windows to Linux, and I describe many of the considerations here.
-              </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#tourists">Tourists</a>:
+              Analysis of data related to overnight stays from a selection of Global North countries in Denmark.
+            </li>
+            <li>
+              <a href="#website">Website</a>:
+              I document how I build and maintain this website, as this in itself is a project.
+            </li>
+            <li><a href="#linux">Linux</a>:
+              I am in the process of migrating my laptop from Windows to Linux, and I describe many of the considerations here.
+            </li>
+          </ul>
           <!-- </p> -->
           <section>
             <div class="row">
@@ -177,7 +202,9 @@
       <!-- Footer -->
       <div id="footer">
         <ul class="copyright">
-          <li>&copy; Amanda Frost</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+          <li>&copy; 2026 Amanda Frost</li>
+          <li><a href="terms.html">Terms</a></li>
+          <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
         </ul>
       </div>
     </div>
