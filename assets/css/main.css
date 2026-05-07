@@ -1745,6 +1745,56 @@ input, select, textarea {
 
     }
 
+  /* Back to top button */
+
+  #back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    border: none;
+    background: #111111;
+    color: #dddddd;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px) scale(0.9);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background 0.25s ease;
+    z-index: 999;
+  }
+
+  #back-to-top.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+  }
+
+  #back-to-top:hover {
+    background: #222222;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    transform: translateY(-2px) scale(1.03);
+  }
+
+  #back-to-top:active {
+    transform: translateY(0) scale(0.97);
+  }
+
+  #back-to-top::before {
+    /* content: "↑"; */
+    display: block;
+  }
+
 /* List */
 
   ul {
@@ -1761,9 +1811,9 @@ input, select, textarea {
     padding-left: 1.25em;
   }
 
-    ol li {
-      padding-left: 0.25em;
-    }
+  ol li {
+    padding-left: 0.25em;
+  }
 
 /* Actions */
 
