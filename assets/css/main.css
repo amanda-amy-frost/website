@@ -1580,6 +1580,20 @@ input, select, textarea {
     display: inline-block;
   }
 
+  /* Added myself */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Added myself */
+  .responsive-table-image {
+    max-height: 70vh;
+    width: auto;
+    object-fit: contain;
+  }
+
     .image img {
       display: block;
       width: 100%;

@@ -238,7 +238,7 @@
           <p><a href="https://molab.marimo.io/notebooks/nb_SuhkMpUkmvbTHzRQd2rt21/app" target="_blank">Go to dashboard</a></p>
           <p>The dashboard my be expanded in the future with additional functionality, but it is feature complete for now.</p>
           <!-- Centering: style="display: block;margin: 0 auto;" -->
-          <p><img src="images/tourism-dashboard-filtered.png" alt="Tourism dashboard" width="700px"></p>
+          <p><img src="images/tourism-dashboard-filtered.png" class="responsive-image" alt="Tourism dashboard"></p>
           <h2 id="current-progress">Current progress</h2>
           <ul>
             <li>☑️ Select relevant data</li>
@@ -286,25 +286,25 @@
           <details>
             <summary><b>Click to show or hide</b></summary>
             <p><strong>"Big hitters"</strong></p>
-            <p><img src="images/big_hitters.svg" alt="Big hitters"></p>
+            <p><img src="images/big_hitters.svg" class="responsive-image" alt="Big hitters"></p>
             <p><strong>Western EU</strong></p>
-            <p><img src="images/west_eu.svg" alt="Western EU"></p>
+            <p><img src="images/west_eu.svg" class="responsive-image" alt="Western EU"></p>
             <p><strong>Nordics (excluding Denmark)</strong></p>
-            <p><img src="images/nordics.svg" alt="Nordics"></p>
+            <p><img src="images/nordics.svg" class="responsive-image" alt="Nordics"></p>
             <p><strong>Southern EU</strong></p>
-            <p><img src="images/south_eu.svg" alt="Southern EU"></p>
+            <p><img src="images/south_eu.svg" class="responsive-image" alt="Southern EU"></p>
             <p><strong>North America</strong></p>
-            <p><img src="images/nor_amer.svg" alt="North America"></p>
+            <p><img src="images/nor_amer.svg" class="responsive-image" alt="North America"></p>
           </details>
           <h3 id="preliminary-findings">Preliminary findings</h3>
           <details>
             <summary><b>Click to show or hide</b></summary>
             <p><strong>Financial crash (UK)</strong></p>
-            <p><img src="images/uk_financial_crash.svg" alt="UK financial crash"></p>
-            <p><img src="images/uk_financial_crash_table.png" alt="Financial crash table" height="500px"></p>
+            <p><img src="images/uk_financial_crash.svg" class="responsive-image" alt="UK financial crash"></p>
+            <p><img src="images/uk_financial_crash_table.png" class="responsive-table-image" alt="Financial crash table"></p>
             <p><strong>Additional impact of Brexit</strong></p>
-            <p><img src="images/uk_brexit.svg" alt="Brexit"></p>
-            <p><img src="images/uk_brexit_table.png" alt="Brexit table" height="500px"></p>
+            <p><img src="images/uk_brexit.svg" class="responsive-image" alt="Brexit"></p>
+            <p><img src="images/uk_brexit_table.png" class="responsive-table-image" alt="Brexit table"></p>
           </details>
           <!-- Preliminary findings -->
           <h2 id="preliminary-findings-1">Preliminary findings</h2>
@@ -347,19 +347,20 @@
               <em>at minimum</em> that value below the mean <em>or above</em>. In other words:
             </p>
             <!-- Font size 32: https://latexeditor.lagrida.com/ -->
-            <img src="images/tourists-equation-1.png" alt="F(y) = \min_y : v_y \geq \mu(v_y) - x\sigma(v_y)">
+            <img src="images/tourists-equation-1.png" class="responsive-image" style="margin-top: 0.5em; margin-bottom: 0.5em;" alt="F(y) = \min_y : v_y \geq \mu(v_y) - x\sigma(v_y)">
             <p>
               Where <em>y<sub>0</sub></em> is the "starting year", <em>c</em> is a country from the set of countries <em>C</em> in my dataset, <em>v<sub>yc</sub></em> is visits from that country in that year, <em>μ</em> is the mean, <em>σ</em> is the standard deviation, and <em>x</em> is what I want to find for my dataset to look reasonable.
             </p>
             <p>If your eyes glaze over at the sight of the above expression, then the simplified version is:</p>
-            <img src="images/tourists-equation-2.png" alt="v \geq \mu(v) - x\sigma(v)">
+            <img src="images/tourists-equation-2.png" class="responsive-image" style="margin-top: 0.5em; margin-bottom: 0.5em;" alt="v \geq \mu(v) - x\sigma(v)">
             <p>For every year and country starting at some base year.</p>
             <p>
               The one caveat is that this was an iterative process, where every iteration set a new potential starting year as the foundation for the data, if the previous iteration still had outlier years. This trial starting year would be the <em>maximum of the minimum suggested</em> years of the previous iteration, where the "minimum year" for each country is the first year that lies within the bounds defined by the above inequality.
             </p>
-            <img src="images/tourists-equation-3.png" alt="F(y) = \min_y : v_y \geq \mu(v_y) - x\sigma(v_y)">
-            <img src="images/tourists-equation-4.png" alt="\text{For }n = 0,1,2,... \text{ while } y_{n+1} \neq y_{n}">
-            <img src="images/tourists-equation-5.png" alt="y_{n+1} = \max_{y_n} F(y_n)">
+            <img src="images/tourists-equation-3.png" class="responsive-image" style="margin-top: 0.5em; margin-bottom: 0.5em;" alt="F(y) = \min_y : v_y \geq \mu(v_y) - x\sigma(v_y)">
+            <!-- Add extra separation in middle image -->
+            <img src="images/tourists-equation-4.png" class="responsive-image" style="margin-top: 1em; margin-bottom: 1em;" alt="\text{For }n = 0,1,2,... \text{ while } y_{n+1} \neq y_{n}">
+            <img src="images/tourists-equation-5.png" class="responsive-image" style="margin-top: 0.5em; margin-bottom: 0.5em;" alt="y_{n+1} = \max_{y_n} F(y_n)">
             <p>
               The standard deviation and mean would then be re-evaluated for each country by only considering data from the trial starting year and above. These would set the new boundary (above some constant <em>x</em> multiple) for determining remaining outliers in the new iteration. When the year stabilized - i.e. went through one full iteration without increasing - then I would choose that as the definitive starting year for the full dataset.
             </p>
@@ -375,7 +376,7 @@
             </p>
             <details>
               <summary><b>Show or hide Nordics chart</b></summary>
-              <p><img src="images/nordics.svg" alt="Nordics"></p>
+              <p><img src="images/nordics.svg" class="responsive-image" alt="Nordics"></p>
             </details>
             <p>
               To be able to see just how much that event affected Icelandic tourism in comparison to related countries was
@@ -403,14 +404,14 @@
             <p><strong>UK financial crash</strong></p>
             <details>
               <summary><b>Show or hide graphs</b></summary>
-              <p><img src="images/uk_financial_crash.svg" alt="UK financial crash"></p>
-              <p><img src="images/uk_financial_crash_table.png" alt="Financial crash table" height="500px"></p>
+              <p><img src="images/uk_financial_crash.svg" class="responsive-image" alt="UK financial crash"></p>
+              <p><img src="images/uk_financial_crash_table.png" class="responsive-table-image" alt="Financial crash table"></p>
             </details>
             <p><strong>Brexit</strong></p>
             <details>
               <summary><b>Show or hide graphs</b></summary>
-              <p><img src="images/uk_brexit.svg" alt="Brexit"></p>
-              <p><img src="images/uk_brexit_table.png" alt="Brexit table" height="500px"></p>
+              <p><img src="images/uk_brexit.svg" class="responsive-image" alt="Brexit"></p>
+              <p><img src="images/uk_brexit_table.png" class="responsive-table-image" alt="Brexit table"></p>
             </details>
             <h3 id="early-indications-of-the-role-of-climate-change">Early indications of the role of climate change?</h3>
             <p>
@@ -421,7 +422,7 @@
             </p>
             <details>
               <summary><b>Show or hide Southern EU charts</b></summary>
-              <p><img src="images/south_eu.svg" alt="Nordics"></p>
+              <p><img src="images/south_eu.svg" class="responsive-image" alt="Nordics"></p>
             </details>
             <p>
               While it would be nice to track the monthly or seasonal data to see if the summer months are where we comparatively
