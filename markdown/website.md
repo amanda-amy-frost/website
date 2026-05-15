@@ -3,7 +3,7 @@
 - Project management
   - Search for good kanban board
   - Open source contributions
-    - [Rust-based kanban TUI](https://github.com/fulsomenko/kanban)
+    - [Rust-based kanban TUI](https://github.com/fulsomenko/kanban/commits?author=amanda-amy-frost)
   - Organizing todos
 
 - Frontend
