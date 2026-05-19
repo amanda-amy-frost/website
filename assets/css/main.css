@@ -1830,7 +1830,7 @@ input, select, textarea {
 
   .ring-progress {
     fill: none;
-    stroke: white;
+    stroke: #dddddd;
     stroke-width: 8;
     stroke-linecap: round;
     stroke-dasharray: 282.6; /* svg radius is 45: 2πr -> 2 * 3.14 * 45 */
