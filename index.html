@@ -863,7 +863,15 @@
       </div>
     </div>
     <!-- Back to top button -->
-    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="back-to-top-wrapper">
+      <svg class="scroll-ring" viewBox="0 0 100 100">
+        <circle class="ring-bg" cx="50" cy="50" r="45" />
+        <circle class="ring-progress" cx="50" cy="50" r="45" />
+      </svg>
+      <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
     <script src="assets/js/back-to-top.js" defer></script>
     <!-- Astral scripts need to be at bottom to work properly -->
     <script src="assets/js/jquery.min.js" defer></script>

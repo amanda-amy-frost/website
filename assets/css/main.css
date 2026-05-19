@@ -1761,17 +1761,23 @@ input, select, textarea {
 
   /* Back to top button */
 
-  #back-to-top {
+  #back-to-top-wrapper {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
     width: 3.5rem;
     height: 3.5rem;
-    border-radius: 999px;
+    z-index: 999;
+  }
+
+  #back-to-top {
+    width: 100%;
+    height: 3.5rem; /* Fix height; width can stay as percent */
+    border-radius: 50%;
     border: none;
     background: #111111;
     color: #dddddd;
-    font-size: 1.5rem;
+    font-size: 1.1rem; /* No more than 1.1rem, no less than 1rem */
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -1781,11 +1787,16 @@ input, select, textarea {
     pointer-events: none;
     transform: translateY(10px) scale(0.9);
     transition:
-      opacity 0.25s ease,
-      transform 0.25s ease,
-      box-shadow 0.25s ease,
       background 0.25s ease;
     z-index: 999;
+  }
+
+  #back-to-top:hover {
+    background: #1a1a1a;
+  }
+
+  #back-to-top::before {
+    display: block;
   }
 
   #back-to-top.is-visible {
@@ -1794,19 +1805,37 @@ input, select, textarea {
     transform: translateY(0) scale(1);
   }
 
-  #back-to-top:hover {
-    background: #222222;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
-    transform: translateY(-2px) scale(1.03);
+  .scroll-ring {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    transform: rotate(-90deg);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
   }
 
-  #back-to-top:active {
-    transform: translateY(0) scale(0.97);
+  #back-to-top.is-visible + .scroll-ring,
+  #back-to-top-wrapper .scroll-ring.visible {
+    opacity: 1;
   }
 
-  #back-to-top::before {
-    /* content: "↑"; */
-    display: block;
+  .ring-bg {
+    fill: none;
+    stroke: rgba(255,255,255,0.15);
+    stroke-width: 8;
+  }
+
+  .ring-progress {
+    fill: none;
+    stroke: white;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 282.6; /* svg radius is 45: 2πr -> 2 * 3.14 * 45 */
+    stroke-dashoffset: 282.6;
+    transition: stroke-dashoffset 0.1s linear;
   }
 
 /* List */
