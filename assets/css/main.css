@@ -1777,7 +1777,7 @@ input, select, textarea {
     border: none;
     background: #111111;
     color: #dddddd;
-    font-size: 1.1rem; /* No more than 1.1rem, no less than 1rem */
+    font-size: 1rem; /* No more than 1.1rem, no less than 1rem */
     cursor: pointer;
     display: flex;
     align-items: center;
