@@ -6,6 +6,9 @@
   - [Microsoft bad](#microsoft-bad)
   - [Linux good](#linux-good)
   - [Open source good](#open-source-good)
+- [Choosing a distro](#choosing-a-distro)
+  - [Which distros are out there?](#which-distros-are-out-there)
+  - [Prelude to the fun part](#prelude-to-the-fun-part)
 
 Every several years, I go through an audit of my accounts and clean up my digital life: security and privacy settings for various essential services, deleting old accounts I don't use anymore, updating info and pruning what doesn't need to be there, and the like. It's sort of like spring cleaning, where you put it off for a while because there are always higher priority things to deal with, but when you finally get around to it and get it done, it's extremely satisfying. It creates a sort of mental reset and a clearer headspace.
 
@@ -113,5 +116,39 @@ Like many in my generation, the conditions for my radicalization were set in pla
 That is why I am working on this now. I want *not* to be part of "Big Tech" and the nightmare of [technofeudalism](https://www.democracynow.org/2025/10/10/cory_doctorow_part_2), and I want *to* be part of something that actively works to undermine these systems, even as those selfsame companies invest in Linux and related projects.
 
 It is a weird and complex world, but this decision is very simple. It is a middle finger to the [panopticon](https://www.irishlegal.com/articles/uk-home-secretary-dreams-of-ai-powered-panopticon) and the failures of neoliberalism. It is a small act of resistance, and an assertion one of the most fundamental and infringed upon rights of being human: autonomy.
+
+</details>
+
+### Choosing a distro
+
+<details open="true">
+
+<summary>Click to show or hide</summary>
+
+The world is still a messy place, and the Linux and FOSS ecosystems have their flaws and failures. And to make the right decisions for myself, I have to face those shortcomings with eyes wide open. Besides the existing barriers that hinder adoption of Linux on the desktop - namely no standard pre-installed PCs in big box stores, a lack of familiarity from end users, as well as missing suites like Office and Adobe - the next largest barrier for someone actively looking to switch is deciding on *which* Linux to install.
+
+As is often the case in open source, there can sometimes be an excessive abundance of choice, and I consider the agony of choice to sometimes be more of a bug than a feature. You shouldn't have to make 50 decisions just to install an OS, but for better or worse - I'd say better overall, but worse for marketing and adoption - you have to research which flavor of Linux you want to try before you can even install it.
+
+#### Which distros are out there?
+
+TODO: Fix dry, informative tone?
+
+The detail here could get arbitrarily complex, so I will have to oversimplify for brevity (if 2500 words for motivation alone is somehow "brief"). Unlike Windows or macOS, where there is only one main version in use at a time, Linux has several independent distributions, called distros. These distros fall under three main family trees: Debian, RHEL, and Arch.
+
+[Debian](https://www.debian.org/) is a community-made distro of Linux that has been around since the 90s and still has staying power today. It is known for its rock solid stability, long support cycles, and heavy use in the server space, but it doesn't have the shine or appeal of faster moving distros. Still, it's used as the base for [Ubuntu](https://ubuntu.com/), which [Linux Mint](https://linuxmint.com/) and other popular distros then base themselves on. My first experience with Linux was on Ubuntu Server around 2012, and to this day I'm still most comfortable working with Debian-based Linux distros.
+
+[RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), or Red Hat Enterprise Linux, is the largest corporate-backed Linux OS, and it has been on the scene for decades as well. The company behind them used to be independent, but they were bought by IBM several years ago and haven't managed to escape the inevitable cycle of enshittification and putting AI into everything. Still, their offerings remain stable, and I mention them as the base of their family tree due to their enormous influence, despite [Fedora](https://fedoraproject.org/) technically being the upstream distro that RHEL takes from.
+
+"Upstream" here refers to the directional relationship between the code of one distro and another. Ubuntu being based on Debian means that Debian is *upstream* from Ubuntu, and Ubuntu is *downstream*. In a similar vein, Fedora is the upstream for RHEL, as they are the first movers on experimental changes. When those new features become stable enough, IBM/Red Hat then adapts them into RHEL, along with their own contributions. There is a lot of cross-pollination however, where downstream (RHEL) changes are also upstreamed into Fedora, so there is not the same degree of independence between Fedora and RHEL as there is between Debian and Ubuntu or Linux Mint and Ubuntu, despite Fedora also being a community-maintained distro. The soft power and reach of IBM simply extends too far for full independence to be possible.
+
+Ubuntu also happens to be backed by a corporation, namely [Canonical](https://canonical.com/), which is a UK firm that has developed the OS for decades. Debian still manages to stay separate from Ubuntu as a purer upstream, and Linux Mint is a strong community-based distro that strips out unwanted "features" from Ubuntu as a part of their efforts.
+
+The last main tree is [Arch](), which is a fast-moving community-based distro that offers cutting edge to bleeding edge updates and a large offering of user-made packages (more on that in a moment). While Debian-based distros revolve around [long-term support]() (LTS) releases as their core offering, Arch is the exact opposite, functioning under a [rolling release]() model. For example, Linux Mint works in 2-year cycles to align with their Ubuntu base, releasing a new major version of the OS every 2 years, which includes 5 years of support and security updates. With Arch, there is never a new "major" version - you are just expected to keep up with the continuous stream of updates.
+
+Fedora strikes a middle ground between the two, creating short-lived point releases with some soft rolling release updates. They release a new major version every 6 months and offer support for a little over a year. They take risks and embrace new technologies before slower moving distros, but especially in the past few years, they have maintained a reputation of producing a solid and stable desktop OS in spite of that, while still leading the Linux space by defining where the future lies for other distros.
+
+Honestly, I find this stuff actually pretty interesting, but it makes for terribly dry reading. It's necessary background to better understand the choices I have to make, but it sure is difficult to present this in any sort of interesting way. Thankfully, we can now return to the narrativizing and brushing over some of the more boring-sounding details while diving into the interesting ones.
+
+#### Prelude to the fun part
 
 </details>
